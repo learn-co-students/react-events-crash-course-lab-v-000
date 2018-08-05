@@ -21,7 +21,6 @@ documentation on events:
 - [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [Supported Events](https://reactjs.org/docs/events.html#supported-events)
 
-
 ## Deliverables
 
 - Finish implementing the `handleMouseMove` method. This method should capture the `x` and `y` coordinates of the mouse from the event and use them to invoke the `drawChromeBoiAtCoords` function that has been provided and is already imported (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
