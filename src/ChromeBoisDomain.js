@@ -41,7 +41,8 @@ export default class ChromeBoisDomain extends Component {
       <canvas
         // add listeners to html canvas element
         onMouseMove={this.handleMouseMove}
-        onClick={toggleCycling()}
+        // pass function as event handler but don't actually call it
+        onClick={toggleCycling}
         onKeyDown={this.keyHandler}
         width='900'
         height='600'
