@@ -27,9 +27,6 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 's', then it should call `resize` with '-' 
    */
 
-   onClick = event => {
-      return(toggleCycling())
-   }
 
    onKeyPress = event => {
         let arg 
@@ -44,7 +41,7 @@ export default class ChromeBoisDomain extends Component {
   render() {
     return (
       <canvas 
-        onClick={this.onClick}
+        onClick={toggleCycling()}
         onMouseMove={this.handleMouseMove}
         onKeyPress={this.onKeyPress}
         width='900'
