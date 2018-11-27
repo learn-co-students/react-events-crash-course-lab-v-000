@@ -45,6 +45,7 @@ export function toggleCycling() {
 }
 
 export function resize(type) {
+  console.log('im in resize')
   const multiplier = (type === "+") ? 1.1 : 0.9
   sizeX *= multiplier
   sizeY *= multiplier
