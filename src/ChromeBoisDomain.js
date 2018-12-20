@@ -27,6 +27,10 @@ export default class ChromeBoisDomain extends Component {
        resize("-")
      }
    }
+
+   clickEvent = (event) => {
+     toggleCycling();
+   }
   /* TODO: Add an event listener to the `<canvas>` element to capture when a key
   /* is pressed. When a key is pressed, an event handler should invoke the the
   /* provided `resize` function with a single argument of either '+' or '-'
@@ -38,7 +42,7 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas
         onMouseMove={this.handleMouseMove}
-        onClick={toggleCycling}
+        onClick={this.clickEvent}
         onKeyPress={this.resizeEvent}
         width='900'
         height='600'
