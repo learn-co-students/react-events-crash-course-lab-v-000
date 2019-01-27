@@ -6,9 +6,6 @@ export default class ChromeBoisDomain extends Component {
   constructor(props) {
     super(props);
     this.state = { x: 0, y: 0 };
-    this.handleMouseMove = this.handleMouseMove.bind(this)
-    this.handleToggle = this.handleToggle.bind(this)
-    this.handleResize = this.handleResize.bind(this)
   }
 
   handleMouseMove = (e) => {
