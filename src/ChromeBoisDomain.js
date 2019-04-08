@@ -31,10 +31,12 @@ export default class ChromeBoisDomain extends Component {
   render() {
     return (
       <canvas 
-        onKeyPress={(e) => {
-          if (e.key === 'a') return resize('+');
-          else if (e.key === 's') return resize('-');
-        }}
+        onKeyPress={
+          (e) => {
+            if (e.key === 'a') return resize('+');
+            else if (e.key === 's') return resize('-');
+          }
+        }
         onClick={toggleCycling}
         onMouseMove={this.handleMouseMove}
         width='900'
