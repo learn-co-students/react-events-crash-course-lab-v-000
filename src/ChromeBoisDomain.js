@@ -35,7 +35,7 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas
         onMouseMove={this.handleMouseMove}
-        onClick={toggleCycling()}
+        onClick={(e) => toggleCycling()}
         onKeyPress={this.plusOrMinus}
         width='900'
         height='600'
