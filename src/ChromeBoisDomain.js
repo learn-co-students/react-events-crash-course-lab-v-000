@@ -35,7 +35,10 @@ export default class ChromeBoisDomain extends Component {
           if (event.key === 'a') {
             resize('+');
           }
-          resize('-');
+          if (event.key === 's') {
+            resize('-');
+          }
+          
           }
         }
         width='900'
