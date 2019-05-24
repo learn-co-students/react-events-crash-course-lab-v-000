@@ -9,7 +9,7 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 import * as canvasHelpers from '../src/canvasHelpers.js'
-import ChromeBoisDomain from '../src/ChromeBoisDomain'
+import ChromeBoisDomain from '../src/ChromeBoisDomain.js'
 
 
 describe('<ChromeBoisDomain />', () => {
