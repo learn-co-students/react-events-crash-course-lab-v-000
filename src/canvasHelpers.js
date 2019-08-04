@@ -2,10 +2,9 @@
 // lesson focused on event handling and not hacky HTML5 canvas nonsense
 
 let colors = []
-//why is this an empty array? how why is it filled?
 let def = null
 let cycling = false
-//what's going on with cycling?
+
 let idx = 0
 let [sizeX, sizeY] = [95, 121]
 
@@ -46,10 +45,10 @@ export function drawChromeBoiAtCoords(x, y) {
 export function toggleCycling() {
   cycling = !cycling
 }
-//so cycling is only true from if (cycling) if toggleCycling is being invoked?
 
 export function resize(type) {
   const multiplier = (type === "+") ? 1.1 : 0.9
+
   sizeX *= multiplier
   sizeY *= multiplier
 }
