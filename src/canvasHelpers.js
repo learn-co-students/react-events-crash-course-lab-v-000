@@ -4,6 +4,7 @@
 let colors = []
 let def = null
 let cycling = false
+
 let idx = 0
 let [sizeX, sizeY] = [95, 121]
 
@@ -23,6 +24,7 @@ export function init() {
 }
 
 export function drawChromeBoiAtCoords(x, y) {
+  debugger
   
   const canvas = document.querySelector("canvas") // sloppy but we haven't introduced lifecycle methods and canvas wouldn't be rendered
   const ctx = canvas.getContext("2d")
@@ -46,6 +48,7 @@ export function toggleCycling() {
 
 export function resize(type) {
   const multiplier = (type === "+") ? 1.1 : 0.9
+
   sizeX *= multiplier
   sizeY *= multiplier
 }
