@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { drawChromeBoiAtCoords, toggleCycling, resize } from './canvasHelpers.js'
-
+      
 
 export default class ChromeBoisDomain extends Component {
   
