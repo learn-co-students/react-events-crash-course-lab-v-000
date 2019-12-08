@@ -31,7 +31,7 @@ export default class ChromeBoisDomain extends Component {
       resize('-')
     }
   }
-
+/* dded for learn submit */
   
   render() {
     return (
