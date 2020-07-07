@@ -9,12 +9,25 @@ export default class ChromeBoisDomain extends Component {
      * from the event and use them to invoke the `drawChromeBoiAtCoords`
      * function that has been provided and is already imported
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
+     * 
+     * Update: DONE!
      */
+    drawChromeBoiAtCoords(event.clientX, event.clientY);
+  }
+
+  handleKeyPress = (event) => {
+    if (event.key === 'a') {
+      resize("+");
+    } else if (event.key === 's') {
+      resize("-");
+    }
   }
   
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
    * listener that should fire it!
+   * 
+   * Update: DONE!
    */
    
   /* TODO: Add an event listener to the `<canvas>` element to capture when a key
@@ -22,12 +35,19 @@ export default class ChromeBoisDomain extends Component {
   /* provided `resize` function with a single argument of either '+' or '-'
   /* if the key pressed was 'a', then it should call `resize` with '+'
   /* if the key pressed was 's', then it should call `resize` with '-' 
+   *
+   * Update: DONE!
    */
+
+  // Student's note: onKeyPress is evidently deprecated; onKeyDown is better.
+  // See https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/onkeypress
   
   render() {
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
+        onClick={toggleCycling}
+        onKeyDown={this.handleKeyPress}
         width='900'
         height='600'
         tabIndex="0">
