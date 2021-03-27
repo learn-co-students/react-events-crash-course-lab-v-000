@@ -5,9 +5,9 @@
     "passes": 5,
     "pending": 0,
     "failures": 0,
-    "start": "2021-03-27T23:28:52.596Z",
-    "end": "2021-03-27T23:28:52.623Z",
-    "duration": 27
+    "start": "2021-03-27T23:32:18.056Z",
+    "end": "2021-03-27T23:32:18.080Z",
+    "duration": 24
   },
   "tests": [
     {
@@ -27,14 +27,14 @@
     {
       "title": "has an event listener for key presses on the <canvas> element that triggers `resize`",
       "fullTitle": "<ChromeBoisDomain /> has an event listener for key presses on the <canvas> element that triggers `resize`",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "when the 'a' key is pressed, `resize` is invoked with the argument of '+'",
       "fullTitle": "<ChromeBoisDomain /> when the 'a' key is pressed, `resize` is invoked with the argument of '+'",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -66,14 +66,14 @@
     {
       "title": "has an event listener for key presses on the <canvas> element that triggers `resize`",
       "fullTitle": "<ChromeBoisDomain /> has an event listener for key presses on the <canvas> element that triggers `resize`",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "when the 'a' key is pressed, `resize` is invoked with the argument of '+'",
       "fullTitle": "<ChromeBoisDomain /> when the 'a' key is pressed, `resize` is invoked with the argument of '+'",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
